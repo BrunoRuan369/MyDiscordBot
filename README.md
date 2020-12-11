@@ -1,6 +1,4 @@
 # Bruno-Teste 
-
-
 ts = TouchSensor()
 leds = Leds()
 
@@ -14,4 +12,4 @@ while True:
         leds.set_color("LEFT", "RED")
         leds.set_color("RIGHT", "RED")
     # don't let this loop use 100% CPU
-    sleep(0.01)
+    sleep(0.01)                           
