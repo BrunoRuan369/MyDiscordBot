@@ -22,4 +22,4 @@ async def on_message(message):
 
      await channel.send("Hello My Lord, em que posso ajudar? " + mention)
 
-client.run("ODgyNDU0OTc2NzM4MjUwNzcz.YS7oPQ.OQ0WV0DPW6iEITlJSVzaW6ZHtlE")
+client.run("TOKEN")
