@@ -1,0 +1,25 @@
+import discord
+
+client = discord.Client()
+
+@client.event
+async def on_ready():
+  print(" O BOT TA ONLINE")
+
+@client.event
+async def on_message(message):
+  content = message.content.lower()
+  channel = message.channel
+  author = message.author.name
+  mention = message.author.mention
+
+  # prevenir possiveis erros
+  if (author == "BotCalMedia-BRFA"):
+     return 
+
+
+  if ( content == "hello"):
+
+     await channel.send("Hello My Lord, em que posso ajudar? " + mention)
+
+client.run("ODgyNDU0OTc2NzM4MjUwNzcz.YS7oPQ.OQ0WV0DPW6iEITlJSVzaW6ZHtlE")
