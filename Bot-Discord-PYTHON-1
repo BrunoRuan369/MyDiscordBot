@@ -1,10 +1,20 @@
 import discord
 
+
 client = discord.Client()
+
 
 @client.event
 async def on_ready():
-  print(" O BOT TA ONLINE")
+    print(" QUE HAJA LUZ")
+
+@client.event
+async def  on_member_join(member):
+ canal = client.get_channel("882998847188660335")
+ regras = client.get_channel("885355731434491915")
+ msg = "Seja muito bem vindo ao servidor dos DESTEMIDOS {} leia as {}".format(member.mention, regras.mention)
+ await client.send_message(canal, msg)
+
 
 @client.event
 async def on_message(message):
@@ -13,13 +23,14 @@ async def on_message(message):
   author = message.author.name
   mention = message.author.mention
 
-  # prevenir possiveis erros
-  if (author == "BotCalMedia-BRFA"):
-     return 
+    # prevenir possiveis erros
+  if (author == "BotDESTEMIDOS-Python"):
+        return
+
+  if (content == "destemido"):
+
+    await channel.send('Olá, Meu Nobre Amigo Eu Sou o DestemidosBot e Irei Falar Um Pouco Sobre Nós, Somos Uma Equipe de Robotica Localizada Na Cidade de Campina Grande - PB Na Escola SESI, Participamos Dos Campeonatos FLL, FTC e OBR no Qual Desenvolvemos Habilidades Como Programação, Contrução de Robores, Design Entre Outras. Seja Muito Bem Vindo Ao Nosso Dicord Server. '  + mention)
 
 
-  if ( content == "hello"):
+client.run("Put Your Discord TOKEN Here")
 
-     await channel.send("Hello My Lord, em que posso ajudar? " + mention)
-
-client.run("TOKEN")
