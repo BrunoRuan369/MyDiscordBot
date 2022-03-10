@@ -29,8 +29,31 @@ async def on_message(message):
 
   if (content == "destemido"):
 
-    await channel.send('Olá, Meu Nobre Amigo Eu Sou o DestemidosBot e Irei Falar Um Pouco Sobre Nós, Somos Uma Equipe de Robotica Localizada Na Cidade de Campina Grande - PB Na Escola SESI, Participamos Dos Campeonatos FLL, FTC e OBR no Qual Desenvolvemos Habilidades Como Programação, Contrução de Robores, Design Entre Outras. Seja Muito Bem Vindo Ao Nosso Dicord Server. '  + mention)
+    await channel.send('Olá, Meu Nobre Amigo Eu Sou o DestemidosBot e Irei Falar Um Pouco Sobre Nós, Somos Uma Equipe de Robotica Localizada Na Cidade de Campina Grande - PB Na Escola SESI, Participamos Dos Campeonatos FLL, FTC e OBR no Qual Desenvolvemos Habilidades Como Programação, Contrução de Robores, Design Entre Outras. Seja Muito Bem Vindo Ao Nosso Dicord Server. Para mais informações sobre nos acesse o nosso link https://destemidos.github.io/'  + mention)
+
+  if (content == "tecnico"):
+
+   await channel.send(' https://user-images.githubusercontent.com/75841641/134705893-e247d699-ba2c-4c55-9a6c-bc1e092c11d6.png')
 
 
-client.run("Put Your Discord TOKEN Here")
+  if (content == "alunos"):
+
+    await channel.send("F.T.C 2021/2022 - Arthur Ramalho | Bruno Fragoso | Brunelize Gomes | Carolyna Santos | Joao Silva | Yasmin Alves| Sara Vitória| Marcos Lima | Pamela Eduarda | Lorena Vitoria |  https://drive.google.com/file/d/1Ua7wJykTJSYO0kEZGTiG7Lk5yxo6bCYs/view?usp=sharing")
+  
+  if (content == "nextway"):
+
+    await channel.send('https://media.discordapp.net/attachments/884958320564240405/915245946462416896/IMG-20211025-WA0021.jpg?width=636&height=636')
+
+  if (content == "fll"):
+
+     await channel.send('FLL 2021/2022 Cargo Connect https://i.ytimg.com/vi/6R5M2u6NrxI/maxresdefault.jpg')
+
+  if (content == "ftc"):
+
+    await channel.send('FTC 2021/2022  FREIGHT FRENZY https://firstrgv.org/wp-content/uploads/2021/08/FREIGHT_FRENZY_Logo_Vertical_RGB_FullColor.jpeg')
+
+
+
+
+client.run("put your discord token right rere")
 
